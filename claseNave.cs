@@ -12,6 +12,7 @@ namespace pryIrustaSantiago
         public string nombreNave;
         public int vida;
         public PictureBox imgNave;
+        
 
         public claseNave()
         {
@@ -40,7 +41,7 @@ namespace pryIrustaSantiago
 
         public void crearEnemigo()
         {
-            codigoEnemigo = aleatorioEnemigo.Next(0, 2);
+            codigoEnemigo = aleatorioEnemigo.Next(0, 3);
 
             imgNave = new PictureBox();
             imgNave.Size = new System.Drawing.Size(70, 70);
@@ -58,14 +59,24 @@ namespace pryIrustaSantiago
                 case 0:
                     vida = 100;
                     nombreNave = "Enemigo1";
+                    
 
                     imgNave.Image = Properties.Resources.enemigo1;
                     break;
                 case 1:
                     vida = 150;
                     nombreNave = "Enemigo2";
+                    
 
                     imgNave.Image = Properties.Resources.enemigo2;
+                    break;
+
+                case 2:
+                    vida = 200;
+                    nombreNave = "Enemigo3";
+                    
+
+                    imgNave.Image = Properties.Resources.enemigo3;
                     break;
             }
         }
