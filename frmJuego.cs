@@ -136,9 +136,16 @@ namespace pryIrustaSantiago
 
                                 puntaje += 20;
                                 lblScore.Text = puntaje.ToString();
+
+                                if(puntaje == 100)
+                                {
+                                    frmFinJuego frm = new frmFinJuego(objNaveJugador.nombreNave);
+                                    frm.ShowDialog();
+
+                                    Close();
+                                }
                             }
-                            
-                            
+                             
                         }
                     }
                     else

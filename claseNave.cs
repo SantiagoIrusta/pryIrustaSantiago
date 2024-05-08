@@ -43,7 +43,7 @@ namespace pryIrustaSantiago
             codigoEnemigo = aleatorioEnemigo.Next(0, 2);
 
             imgNave = new PictureBox();
-            imgNave.Size = new System.Drawing.Size(80, 80);
+            imgNave.Size = new System.Drawing.Size(70, 70);
             imgNave.SizeMode = PictureBoxSizeMode.StretchImage;
             imgNave.Tag = "naveEnemiga";
 

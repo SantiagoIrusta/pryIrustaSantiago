@@ -12,9 +12,11 @@ namespace pryIrustaSantiago
 {
     public partial class frmFinJuego : Form
     {
-        public frmFinJuego()
+        public frmFinJuego(string nombre)
         {
             InitializeComponent();
+            lblNombreJugador.Text = nombre;
+
         }
     }
 }

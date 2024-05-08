@@ -34,6 +34,8 @@ namespace pryIrustaSantiago
             {
                 frmJuego frm = new frmJuego(txtNombreJugador.Text);
                 frm.ShowDialog();
+
+                txtNombreJugador.Clear();
             }
             else
             {
