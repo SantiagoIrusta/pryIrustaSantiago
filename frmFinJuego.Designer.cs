@@ -37,9 +37,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20.25F);
-            label1.Location = new Point(104, 57);
+            label1.Location = new Point(86, 76);
             label1.Name = "label1";
-            label1.Size = new Size(186, 37);
+            label1.Size = new Size(233, 46);
             label1.TabIndex = 0;
             label1.Text = "¡FELICIDADES!";
             // 
@@ -47,9 +47,9 @@
             // 
             lblNombreJugador.AutoSize = true;
             lblNombreJugador.Font = new Font("Segoe UI", 20.25F);
-            lblNombreJugador.Location = new Point(288, 57);
+            lblNombreJugador.Location = new Point(338, 76);
             lblNombreJugador.Name = "lblNombreJugador";
-            lblNombreJugador.Size = new Size(206, 37);
+            lblNombreJugador.Size = new Size(258, 46);
             lblNombreJugador.TabIndex = 1;
             lblNombreJugador.Text = "nombreJugador";
             // 
@@ -57,21 +57,22 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 20.25F);
-            label2.Location = new Point(230, 111);
+            label2.Location = new Point(230, 148);
             label2.Name = "label2";
-            label2.Size = new Size(140, 37);
+            label2.Size = new Size(175, 46);
             label2.TabIndex = 2;
             label2.Text = "GANASTE!";
             // 
             // frmFinJuego
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(598, 204);
+            ClientSize = new Size(683, 272);
             Controls.Add(label2);
             Controls.Add(lblNombreJugador);
             Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "frmFinJuego";
             Text = "frmFinJuego";
             ResumeLayout(false);

@@ -51,21 +51,20 @@
             lblScore.BackColor = SystemColors.ButtonFace;
             lblScore.Font = new Font("Segoe UI", 10.8F);
             lblScore.ForeColor = Color.Red;
-            lblScore.Location = new Point(847, 9);
+            lblScore.Location = new Point(834, 9);
             lblScore.Name = "lblScore";
-            lblScore.Size = new Size(17, 20);
+            lblScore.Size = new Size(22, 25);
             lblScore.TabIndex = 0;
             lblScore.Text = "0";
             // 
             // frmJuego
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(900, 800);
             Controls.Add(lblScore);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "frmJuego";
             Text = "frmJuego";
             Load += frmJuego_Load;
