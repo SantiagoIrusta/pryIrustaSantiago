@@ -19,7 +19,7 @@ namespace pryIrustaSantiago
             imgDisparo.Tag = "disparo";
         }
 
-        public void Disparar(Point location)
+        public void CrearDisparo(Point location)
         {
             imgDisparo.Location = location;
         }

@@ -12,24 +12,24 @@ namespace pryIrustaSantiago
 {
     public partial class frmFirma : Form
     {
-        Bitmap bmpFirma;
+        Bitmap bmpFirma; //Declaro una variable para almacenar la firma como un objeto Bitmap
 
         public frmFirma()
         {
-            InitializeComponent();
+            InitializeComponent(); //Se inicializan los componentes del formulario
         }
 
         private void pbFirma_MouseMove(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
+            if (e.Button == MouseButtons.Left) 
             {
-                using (Graphics papel = pbFirma.CreateGraphics())
+                using (Graphics papel = pbFirma.CreateGraphics()) //Creo un objeto del tipo Graphics para dibujar en el pictureBox
                 {
                     papel.FillEllipse(Brushes.Black, e.X, e.Y, 10, 10);
                 }
 
 
-                using (Graphics miFirma = Graphics.FromImage(bmpFirma))
+                using (Graphics miFirma = Graphics.FromImage(bmpFirma)) //Creo un objeto Graphics para dibujar en el objeto Bitmap
                 {
                     miFirma.FillEllipse(Brushes.Black, e.X, e.Y, 10, 10);
                 }
@@ -40,33 +40,35 @@ namespace pryIrustaSantiago
         {
             try
             {
-                string nombreCarpeta = "FIRMAS";
-                string carpetaDestino = Path.Combine(Application.StartupPath, nombreCarpeta);
+                string nombreCarpeta = "FIRMAS"; //Nombre de la carpeta donde se guardaran las firmas
+                string carpetaDestino = Path.Combine(Application.StartupPath, nombreCarpeta); //Ruta completa de la carpeta destino
+                                                                                              
 
                 if (!Directory.Exists(carpetaDestino))
                 {
-                    Directory.CreateDirectory(carpetaDestino);
+                    Directory.CreateDirectory(carpetaDestino); //Creo la carpeta si no existe
                 }
 
-                string fechaHora = DateTime.Now.ToString("yyyy-MM-dd_HH.mm");
-                string nombreArchivo = fechaHora + ".png";
-                string rutaCompleta = Path.Combine(carpetaDestino, nombreArchivo);
+                string fechaHora = DateTime.Now.ToString("yyyy-MM-dd_HH.mm"); //Obtengo fecha y hora actual
+                string nombreArchivo = fechaHora + ".png"; //Creo un nombre de archivo utilizando la fecha y hora
+                string rutaCompleta = Path.Combine(carpetaDestino, nombreArchivo); //Obtengo la ruta completa del archivo de imagen
 
-                bmpFirma.Save(rutaCompleta);
+                bmpFirma.Save(rutaCompleta); //Guado la firma en la ruta especificada
 
                 MessageBox.Show("Imagen guardada con exito");
 
-                pbFirma.Refresh();
+                pbFirma.Refresh(); //Actualizo el PictureBox
             }
             catch (Exception error)
             {
-                MessageBox.Show(error.ToString());
+                MessageBox.Show(error.ToString()); 
             }
         }
 
         private void frmFirma_Load(object sender, EventArgs e)
         {
-            bmpFirma = new Bitmap(pbFirma.Width, pbFirma.Height);
+            bmpFirma = new Bitmap(pbFirma.Width, pbFirma.Height); //Inicializo el objeto Bitmap para almacenar la firma
+                                                                  //con el tamaño del PictureBox
         }
 
         private void btnBorrar_Click(object sender, EventArgs e)

@@ -36,18 +36,22 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 20.25F);
-            label1.Location = new Point(86, 76);
+            label1.ForeColor = SystemColors.ButtonFace;
+            label1.Location = new Point(112, 80);
             label1.Name = "label1";
-            label1.Size = new Size(233, 46);
+            label1.Size = new Size(194, 46);
             label1.TabIndex = 0;
-            label1.Text = "¡FELICIDADES!";
+            label1.Text = "¡Felicidades";
             // 
             // lblNombreJugador
             // 
             lblNombreJugador.AutoSize = true;
+            lblNombreJugador.BackColor = Color.Transparent;
             lblNombreJugador.Font = new Font("Segoe UI", 20.25F);
-            lblNombreJugador.Location = new Point(338, 76);
+            lblNombreJugador.ForeColor = SystemColors.ButtonFace;
+            lblNombreJugador.Location = new Point(312, 80);
             lblNombreJugador.Name = "lblNombreJugador";
             lblNombreJugador.Size = new Size(258, 46);
             lblNombreJugador.TabIndex = 1;
@@ -56,8 +60,10 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 20.25F);
-            label2.Location = new Point(230, 148);
+            label2.ForeColor = SystemColors.ButtonFace;
+            label2.Location = new Point(240, 147);
             label2.Name = "label2";
             label2.Size = new Size(175, 46);
             label2.TabIndex = 2;

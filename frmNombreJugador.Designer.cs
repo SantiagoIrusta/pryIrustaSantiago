@@ -47,8 +47,8 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = SystemColors.ActiveCaptionText;
-            label2.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 19.8000011F);
             label2.ForeColor = SystemColors.ButtonFace;
             label2.Location = new Point(260, 9);
             label2.Name = "label2";
@@ -59,8 +59,8 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.BackColor = SystemColors.ActiveCaptionText;
-            label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe UI", 13.8F);
             label3.ForeColor = SystemColors.ButtonFace;
             label3.Location = new Point(30, 115);
             label3.Name = "label3";
@@ -70,7 +70,7 @@
             // 
             // txtNombreJugador
             // 
-            txtNombreJugador.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtNombreJugador.Font = new Font("Segoe UI", 12F);
             txtNombreJugador.Location = new Point(274, 115);
             txtNombreJugador.Name = "txtNombreJugador";
             txtNombreJugador.Size = new Size(453, 34);
@@ -78,9 +78,9 @@
             // 
             // btnJugar
             // 
-            btnJugar.BackColor = SystemColors.ActiveCaptionText;
-            btnJugar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnJugar.ForeColor = SystemColors.ButtonFace;
+            btnJugar.BackColor = Color.Transparent;
+            btnJugar.Font = new Font("Segoe UI", 12F);
+            btnJugar.ForeColor = SystemColors.ActiveCaptionText;
             btnJugar.Location = new Point(595, 225);
             btnJugar.Name = "btnJugar";
             btnJugar.Size = new Size(119, 41);
@@ -91,9 +91,9 @@
             // 
             // btnSalir
             // 
-            btnSalir.BackColor = SystemColors.ActiveCaptionText;
-            btnSalir.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnSalir.ForeColor = SystemColors.ButtonFace;
+            btnSalir.BackColor = Color.Transparent;
+            btnSalir.Font = new Font("Segoe UI", 12F);
+            btnSalir.ForeColor = SystemColors.ActiveCaptionText;
             btnSalir.Location = new Point(30, 225);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(119, 41);
@@ -106,6 +106,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(775, 292);
             Controls.Add(btnSalir);
             Controls.Add(btnJugar);
@@ -113,6 +114,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            ForeColor = SystemColors.ActiveCaptionText;
             Name = "frmNombreJugador";
             Text = "Inicio";
             ResumeLayout(false);

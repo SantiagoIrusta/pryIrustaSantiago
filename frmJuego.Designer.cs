@@ -43,17 +43,18 @@
             // timerDisparo
             // 
             timerDisparo.Enabled = true;
+            timerDisparo.Interval = 50;
             timerDisparo.Tick += timerDisparo_Tick;
             // 
             // lblScore
             // 
             lblScore.AutoSize = true;
-            lblScore.BackColor = SystemColors.ButtonFace;
-            lblScore.Font = new Font("Segoe UI", 10.8F);
+            lblScore.BackColor = SystemColors.ActiveCaptionText;
+            lblScore.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblScore.ForeColor = Color.Red;
-            lblScore.Location = new Point(834, 9);
+            lblScore.Location = new Point(822, 9);
             lblScore.Name = "lblScore";
-            lblScore.Size = new Size(22, 25);
+            lblScore.Size = new Size(26, 31);
             lblScore.TabIndex = 0;
             lblScore.Text = "0";
             // 
