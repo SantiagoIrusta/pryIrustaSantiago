@@ -72,6 +72,7 @@
             // 
             txtNombreJugador.Font = new Font("Segoe UI", 12F);
             txtNombreJugador.Location = new Point(274, 115);
+            txtNombreJugador.MaxLength = 8;
             txtNombreJugador.Name = "txtNombreJugador";
             txtNombreJugador.Size = new Size(453, 34);
             txtNombreJugador.TabIndex = 3;

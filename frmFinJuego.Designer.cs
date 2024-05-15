@@ -39,7 +39,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 20.25F);
             label1.ForeColor = SystemColors.ButtonFace;
-            label1.Location = new Point(112, 80);
+            label1.Location = new Point(63, 56);
             label1.Name = "label1";
             label1.Size = new Size(194, 46);
             label1.TabIndex = 0;
@@ -51,11 +51,11 @@
             lblNombreJugador.BackColor = Color.Transparent;
             lblNombreJugador.Font = new Font("Segoe UI", 20.25F);
             lblNombreJugador.ForeColor = SystemColors.ButtonFace;
-            lblNombreJugador.Location = new Point(312, 80);
+            lblNombreJugador.Location = new Point(263, 56);
             lblNombreJugador.Name = "lblNombreJugador";
-            lblNombreJugador.Size = new Size(258, 46);
+            lblNombreJugador.Size = new Size(138, 46);
             lblNombreJugador.TabIndex = 1;
-            lblNombreJugador.Text = "nombreJugador";
+            lblNombreJugador.Text = "nombre";
             // 
             // label2
             // 
@@ -63,7 +63,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 20.25F);
             label2.ForeColor = SystemColors.ButtonFace;
-            label2.Location = new Point(240, 147);
+            label2.Location = new Point(407, 56);
             label2.Name = "label2";
             label2.Size = new Size(175, 46);
             label2.TabIndex = 2;
@@ -74,7 +74,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(683, 272);
+            ClientSize = new Size(644, 158);
             Controls.Add(label2);
             Controls.Add(lblNombreJugador);
             Controls.Add(label1);
